@@ -6,7 +6,7 @@ require 'sprockets/railtie'
 
 Bundler.require :default, Rails.env
 
-module CriandoTemplateSassComFunctionNthEIndex
+module CriandoTemplatesSassComFunctionNthEIndex
   class Application < Rails::Application
   end
 end

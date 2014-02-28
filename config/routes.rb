@@ -1,3 +1,3 @@
-CriandoTemplateSassComFunctionNthEIndex::Application.routes.draw do
+CriandoTemplatesSassComFunctionNthEIndex::Application.routes.draw do
   root 'application#index'
 end

@@ -1,4 +1,4 @@
-CriandoTemplateSassComFunctionNthEIndex::Application.configure do
+CriandoTemplatesSassComFunctionNthEIndex::Application.configure do
   config.action_controller.perform_caching = true
   config.active_support.deprecation        = :notify
   config.assets.compile                    = false

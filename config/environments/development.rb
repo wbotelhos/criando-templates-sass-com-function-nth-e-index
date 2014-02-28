@@ -1,4 +1,4 @@
-CriandoTemplateSassComFunctionNthEIndex::Application.configure do
+CriandoTemplatesSassComFunctionNthEIndex::Application.configure do
   config.action_controller.perform_caching   = false
   config.active_record.migration_error       = :page_load
   config.active_support.deprecation          = :log
