@@ -1,28 +1,7 @@
-== README
+# Criando Templates SASS com function nth e index
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[http://wbotelhos.com/criando-templates-sass-com-function-nth-e-index](http://wbotelhos.com/criando-templates-sass-com-function-nth-e-index)
 
-Things you may want to cover:
+## Love it!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=X8HEP2878NDEG&item_name=wbotelhos.com) or [Gittip](http://www.gittip.com/wbotelhos). Thanks! (:
