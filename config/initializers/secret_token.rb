@@ -1,0 +1,1 @@
+CriandoTemplateSassComFunctionNthEIndex::Application.config.secret_key_base = 'c9da35e7ddeee2af97e8ccd70b05eee6af3f3fbe97e219e71ea8a7155eda9bbe9727eb3001fe363caa660ee7d2ea7d2bfefdb4ad3aeea5d401f6706d42c425da'

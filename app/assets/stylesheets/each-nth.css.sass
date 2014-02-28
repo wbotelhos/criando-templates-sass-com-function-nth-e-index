@@ -1,0 +1,29 @@
+$default_height: 40px
+$default_padding-top: 20px
+$default_text-align: center
+
+$default_background-color: #000
+$default_color: #FFF
+
+$github_background-color: #333
+$github_color: #F1F1F1
+
+$linkedin_background-color: #1B86BC
+$linkedin_color: #F2F2F2
+
+$twitter_background-color: #00ABF0
+$twitter_color: #F3F3F3
+
+$skins: default $default_background-color $default_color, github $github_background-color $github_color, linkedin $linkedin_background-color $linkedin_color, twitter $twitter_background-color $twitter_color
+
+.each-nth
+  @each $skin in $skins
+    // abstract the wrapper class repetition with first property the is the class name
+    .#{nth($skin, 1)}
+      // abstract the property two that I have to know the right position
+      background-color: nth($skin, 2)
+      // abstract the property three that I have to know the right position
+      color: nth($skin, 3)
+      height: $default_height
+      padding-top: $default_padding-top
+      text-align: $default_text-align
