@@ -1,26 +1,23 @@
-$default_height: 40px
-$default_padding-top: 20px
-$default_text-align: center
+$default-height: 40px
+$default-padding-top: 20px
+$default-text-align: center
 
-$default_background-color: #000
-$default_color: #FFF
+$github-background-color: #333
+$github-color: #EEE
 
-$github_background-color: #333
-$github_color: #F1F1F1
+$linkedin-background-color: #1B86BC
+$linkedin-color: #DDD
 
-$linkedin_background-color: #1B86BC
-$linkedin_color: #F2F2F2
+$twitter-background-color: #00ABF0
+$twitter-color: #CCC
 
-$twitter_background-color: #00ABF0
-$twitter_color: #F3F3F3
-
-$skins: default $default_background-color $default_color, github $github_background-color $github_color, linkedin $linkedin_background-color $linkedin_color, twitter $twitter_background-color $twitter_color
+$skins: github $github-background-color $github-color, linkedin $linkedin-background-color $linkedin-color, twitter $twitter-background-color $twitter-color
 
 // abstract the index of `nth(array, index)` with a human named method
-@function class-name-for($skin)
+@function class_name_for($skin)
   @return nth($skin, 1)
 
-@function background-color-for($skin)
+@function background_color_for($skin)
   @return nth($skin, 2)
 
 @function color-for($skin)
@@ -28,9 +25,9 @@ $skins: default $default_background-color $default_color, github $github_backgro
 
 .each-nth-function
   @each $skin in $skins
-    .#{class-name-for($skin)}
-      background-color: background-color-for($skin)
+    .#{class_name_for($skin)}
+      background-color: background_color_for($skin)
       color: color-for($skin)
-      height: $default_height
-      padding-top: $default_padding-top
-      text-align: $default_text-align
+      height: $default-height
+      padding-top: $default-padding-top
+      text-align: $default-text-align

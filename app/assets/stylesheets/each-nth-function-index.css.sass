@@ -1,29 +1,26 @@
-$default_height: 40px
-$default_padding-top: 20px
-$default_text-align: center
+$default-height: 40px
+$default-padding-top: 20px
+$default-text-align: center
 
-$skins:              default    github    linkedin    twitter
-$background-colors:  #000       #333      #1B86BC     #00ABF0
-$colors:             #FFF       #F1F1F1   #F2F2F2     #F3F3F3
+$skins:              github    linkedin    twitter
+$background-colors:  #333      #1B86BC     #00ABF0
+$colors:             #EEE      #DDD        #CCC
 
-@function index-for($skin)
+@function index_for($skin)
   // returns the index of the passed name of item on matrix
   @return index($skins, $skin)
 
-@function class-name-for($skin)
-  @return nth($skins, index-for($skin))
+@function background_color_for($skin)
+  @return nth($background-colors, index_for($skin))
 
-@function background-color-for($skin)
-  @return nth($background-colors, index-for($skin))
-
-@function color-for($skin)
-  @return nth($colors, index-for($skin))
+@function color_for($skin)
+  @return nth($colors, index_for($skin))
 
 .each-nth-function-index
   @each $skin in $skins
-    .#{class-name-for($skin)}
-      background-color: background-color-for($skin)
-      color: color-for($skin)
-      height: $default_height
-      padding-top: $default_padding-top
-      text-align: $default_text-align
+    .#{$skin}
+      background-color: background_color_for($skin)
+      color: color_for($skin)
+      height: $default-height
+      padding-top: $default-padding-top
+      text-align: $default-text-align
